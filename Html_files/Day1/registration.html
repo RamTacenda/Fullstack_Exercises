@@ -6,37 +6,67 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Registration </h1>
     <form action="">
-        <label for="">Name: <input type="text"></label> <br><br>
-
-        <label for="">DOB: <input type="date"></label> <br><br>
-
-        <label for="gender">Gender:
-            <input type="radio" name="gender"> Male 
-            <input type="radio" name="gender"> Female 
-        </label> <br> <br>
-
-        <label for=""> College 
-            <input type="text" name="gender">
-        </label> <br><br>
-
-        <label for="">Dept:
-        <select name="" id="">
-            <option value=""> AI & DS</option>
-            <option value=""> CSE</option>
-            <option value=""> IT</option>
-            <option value=""> EEE</option>
-            <option value=""> BT</option>
-            <option value=""> CIVIL</option>
-            <option value=""> MECH</option>
-        </select>
-        </label> <br><br>
-
-        <label for="">year: <input type="number"></label> <br><br>
-
-        <button> Register </button>
-        <h4>Already have an account? <button> <a href="Login_page.html" style="text-decoration: none; color: black;"> Login </a> </button> </a> </h4>
+        <table width="60%" align="center">
+            <tr>
+                <th colspan="2"align="center">Registration Form</th>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Phone No</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>D.O.B</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Passcode</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td name="gender">Gender</td>
+                <td><input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female</td>
+            </tr>
+            <tr>
+                <td>Skills</td>
+                <td><input type="checkbox">Python
+                <input type="checkbox">Java
+                <input type="checkbox">C</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><select name="city" id="">
+                    <option value="">Coimbatore</option>
+                    <option value="">Ernakulam</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Karaikudi</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Register"> </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
