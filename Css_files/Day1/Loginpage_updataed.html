@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        .log{
+            border: 2px solid rgb(14, 205, 160);
+            border-collapse: collapse;
+            padding: 20px;
+            position: absolute;
+            top: 100px;
+            left: 43%;
+            border-radius: 25px;
+            width: 300px;
+            height: 210px;
+            text-align: center;
+        }
+        table:hover{
+            border: 2px solid rgb(14, 205, 160);
+            border-collapse: collapse;
+            padding: 20px;
+            position: absolute;
+            top: 100px;
+            left: 43%;
+            border-radius: 20px;
+            width: 300px;
+            height: 210px;
+            text-align: center;
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+        th{
+            background-color: rgb(14, 205, 160);
+        }
+        #submit{
+            background-color: rgb(14, 205, 160);
+            border: none;
+            border-radius: 10px;
+            height: 25px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+    <form action="../Html_files/Day1/registration.html" method="post">
+        <table align="center" class="log">
+            <tr>
+                <th colspan="2"> Login</th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Passcode</td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" id="submit"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

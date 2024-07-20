@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .reg{
+            border: 2px solid rgb(14, 205, 160);
+            border-collapse: collapse;
+            padding: 20px;
+            position: absolute;
+            top: 100px;
+            left: 43%;
+            border-radius: 25px;
+            width: 400px;
+            height: 500px;
+            text-align: center;
+        }
+        .reg:hover{
+            border: 2px solid rgb(14, 205, 160);
+            border-collapse: collapse;
+            padding: 20px;
+            position: absolute;
+            top: 100px;
+            left: 43%;
+            border-radius: 25px;
+            width: 400px;
+            height: 500px;
+            text-align: center;
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+        th{
+            background-color: rgb(14, 205, 160);
+        }
+        #submit{
+            background-color: rgb(14, 205, 160);
+            border: none;
+            border-radius: 10px;
+            height: 25px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table width="60%" align="center" class="reg">
+            <tr>
+                <th colspan="2"align="center">Registration Form</th>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Phone No</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>D.O.B</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Passcode</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td name="gender">Gender</td>
+                <td><input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female</td>
+            </tr>
+            <tr>
+                <td>Skills</td>
+                <td><input type="checkbox">Python
+                <input type="checkbox">Java
+                <input type="checkbox">C</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><select name="city" id="">
+                    <option value="">Coimbatore</option>
+                    <option value="">Ernakulam</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Karaikudi</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Register" id="submit"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
