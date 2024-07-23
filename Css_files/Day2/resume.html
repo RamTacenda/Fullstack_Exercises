@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <style>
+            table, th, td{
+                /* border:1px solid black; */
+            }
+            td, li, pre{
+                color: gray;
+            }
+            h1{
+                background-color: rgba(132, 211, 226, 0.501);
+                width: 60vh;
+            }
+            h1:hover{
+                background-color: rgba(132, 211, 226, 0.501);
+                width: 60vh;
+                box-shadow: 10px 10px rgba(6, 144, 172, 0.501);
+                transition: 0.8s;
+                cursor:pointer;
+            }
+            #links{
+                color: rgb(211, 26, 26);
+            }
+            .container{
+                display:flex;
+                flex-direction: column;
+                /* justify-content: center; */
+                align-items: center;
+            }
+            .Nav,.CO, .EO, .Skls, .PP, .AP, .Intern, .WFme{
+                border-left: 2px dashed black;
+                border-right: 2px dashed black;
+                width: 120vh;
+                /* background-color: rgba(132, 211, 226, 0.501); */
+                padding: 20px;
+            }
+            .CO:hover, .EO:hover, .Skls:hover, .PP:hover, .AP:hover, .Intern:hover, .WFme:hover{
+                width: 120vh;
+                background-color: rgba(132, 211, 226, 0.501);
+                padding: 20px;
+                transform: scale(1.1);
+                transition: 0.5s;
+                box-shadow: 7px 7px 7px rgba(132, 211, 226, 0.501);
+                border-radius: 5px;
+            }
+            h1,h2{
+                color: black;
+                font-family: 'Trirong', serif;
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            th{
+                background-color: black;
+                color: white;
+            }
+
+        </style>
+        <title> Resume </title>
+    </head>
+    <body>
+        <div class = "container">
+
+            <div class="Nav">
+            <center>
+                <h1> Rameshkumar Moahnraj </h1>
+                <h3>Aspiring Data Scientist 
+                    | <a href = "https://www.linkedin.com/in/rameshkumar-mohanraj" id="links"> LinkedIn</a>
+                    | <a href = "https://github.com/RamTacenda" id="links"> GitHub</a>
+                    | <a href = "https://medium.com/@rameshkumar.mohanraj05" id="links"> Medium</a>
+                </h3>
+            </center>
+            
+            </div>
+
+
+            <div class="CO">
+            <h2><i> Carrier Objective </h2></h2>
+            <h4 style = "color:gray"> My affinities are towards EDA and ML. Relentless when committed to something. 
+                Striving to become a prominent 
+                data scientist, Setting my foot in the world of blogging.
+            </h4>
+            
+            </div>
+
+
+            <div class="EO">
+            <h2> <i>Educational Qualification</i></h2>
+            <center>
+            <table width="80%" style="border: 1px; text-align: center;" >
+                <tr>
+                    <th>Course</th>
+                    <th>Instuition</th>
+                    <th>Board</th>
+                    <th>Marks</th>
+                    <th>Year of passing</th>
+                </tr>
+                <tr>
+                    <td>SSLC</td>
+                    <td>Govt boys high school Kpm</td>
+                    <td>Metric</td>
+                    <td> 93.8%</td>
+                    <td> 2019 </td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>SSM Lakshiammal Matriculation school</td>
+                    <td>Metric</td>
+                    <td> 93.1%</td>
+                    <td> 2021 </td>
+                </tr>
+                <tr>
+                    <td>BTECH</td>
+                    <td>K S Rangasamy college of technology</td>
+                    <td>Anna University</td>
+                    <td> 78.9%</td>
+                    <td> 2025</td>
+                </tr>
+            </table>
+            </center>
+            
+            </div>
+
+
+            <div class="Skls">
+            <h2><i> Skills</i></h2>
+            <ul>
+                <li>Neural Networks</li>
+                <li> Exploratory Data analysis </li>
+                <li> Machine Learning </li>
+                <li> Python </li>
+                <li> Power BI </li>
+                <li> MySql </li>
+                <li> Writing </li>
+            </ul>
+            
+            </div>
+
+
+            <div class="PP">
+            <h2><i>Personal Projects</i></h2>
+            <h3> Amazon Data Analysis </h3>
+            <ul>
+                <li> Scarpped the Amazon data using BeautifulSoup </li>
+                <li> Data cleaning for the analysis </li>
+                <li> Finally the analysis and visualization has been done</li>
+            </ul>
+            <h3> House Price Prediction </h3>
+            <ul>
+                <li> Used realtime data with 70 dimensions </li>
+                <li> Computed the algorithm </li>
+                <li> Encoded and Preprocessed </li>
+            </ul>
+            <h3> Corona data Analysis </h3>
+            <ul>
+                <li> Collected a corona infected people datasets of india 2020-21 </li>
+                <li> Made visualization that would make sense to all kinds of people </li>
+                <li> The Results are published in the PowerBI</li>
+            </ul>
+            
+            </div>
+
+
+            <div class="AP">
+            <h2> Articles published </h2>
+            <ul>
+                <li> <a href="https://medium.com/@rameshkumar.mohanraj05/master-the-art-of-scrapping-e-commerce-websites-in-your-desired-currency-9f2c8032a647" target="_blank">Scrapping the E-commerce website with a desired currency preference. </a></li>
+                <li> <a href="https://medium.com/@rameshkumar.mohanraj05/three-must-know-encoding-techniques-that-will-make-you-a-machine-learning-pro-e3a18b497562"> Three must know encoding techniques in Machine Learning that should suffice.</a></li>
+            </ul>
+            
+            <h2><i>Courses completed</i></h2>
+            <ul>
+                <li> Supervised learning Algorithms </li>
+                <li> Pandas (a complete guide 2023) </li>
+                <li> Power BI </li>
+            </ul>
+            
+            </div>
+
+
+            <div class="Intern">
+            <h2><i>Internships</i></h2>
+            <h3> Web Development - Insource Technologies </h3>
+            <ul>
+                <li> Developed a Fandom website </li>
+                <li> Acquired a adequate knowledge on Frontend Development </li>
+                <li> Got the lead to learn Backend Development</li>
+            </ul>
+            
+            </div>
+
+
+            <div class="WFme">
+            <h2> Where you can find me? </h2>
+            <pre>
+    Mail: rameshkumar.mohanraj05@gmail.com
+    phone: 93424 45478
+    city: Erode, India
+            </pre>
+            </div>
+
+
+        </div>
+    </body>
+</html>
