@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prime(){
+            var num = parseInt(document.getElementsByTagName("input")[0].value);
+            var res = "Prime";
+            for(let i=2; i < num; i++){
+                if(num % i == 0){
+                    res = "Not Prime";
+                }
+            }
+            document.getElementById("output").innerHTML = "<br> <b> The Number "+num+" is "+res+ "</b>";
+        }
+    </script>
+</head>
+<body>
+    <label for=""> Enter a Number: <input type="number"></label> <br>
+    <br>
+    <button style="margin-left: 150px;" onclick="prime()"> calculate </button>
+    <div class="prime" id="output">
+
+    </div>
+</body>
+</html>

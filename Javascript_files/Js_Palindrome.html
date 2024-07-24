@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function palindrome(){
+            var InputElement = document.getElementsByName("string")[0];
+            var string = InputElement.value;
+            var rev = "";
+            for(var i=string.length - 1; i>=0; i--){
+                rev += string[i]
+            }
+            if(rev.toLowerCase() == string.toLowerCase()){
+                res = "Palindrome"
+            }
+            else{
+                res = "Not a Palindrome"
+            }
+            InputElement.value = rev;
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</head>
+<body>
+    <label for=""> Enter your Name: <input type="text" name="string" id=""> </label> <br> <br>
+    <button style="margin-left: 170px;" onclick="palindrome()"> Check </button>
+    <div id="result">
+
+    </div>
+</body>
+</html>

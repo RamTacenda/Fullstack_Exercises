@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+    <script>
+        function methods(){
+            var str = document.getElementById("given").value;
+            var opr = document.getElementById("op").value;
+            if(opr == "length"){
+                res = str.length;
+                document.getElementById("answers").innerHTML = "Length: "+res;
+            }
+            if(opr == "charAt"){
+                var index = parseInt(prompt("Give me the index: "));
+                res = str.charAt(index);
+                document.getElementById("answers").innerHTML = "CharAt("+index+"): "+res;
+            }
+            if(opr == "slice"){
+                var nums = prompt("Give me the start and end (ie. 4 5): ");
+                const arr = nums.split(" ");
+                res = str.slice(parseInt(arr[0]), parseInt(arr[1]));
+                document.getElementById("answers").innerHTML = "Sliced: "+ res;
+            }
+            if(opr == "substring"){
+                var nums = prompt("Give me the start and end (ie. 2 4): ");
+                const arr = nums.split(" ");
+                res = str.substring(parseInt(arr[0]), parseInt(arr[1]));
+                document.getElementById("answers").innerHTML = "Substring: "+ res;
+            }
+            if(opr == "substr"){
+                var nums = prompt("Give me the start and length (ie. 2 4): ");
+                const arr = nums.split(" ");
+                res = str.substr(parseInt(arr[0]), parseInt(arr[1]));
+                document.getElementById("answers").innerHTML = "Substr: "+ res;
+            }
+            if(opr == "lower"){
+                res = str.toLowerCase();
+                document.getElementById("answers").innerHTML = "Turned into Lowercase: "+res;
+            }
+            if(opr == "upper"){
+                res = str.toUpperCase();
+                document.getElementById("answers").innerHTML = "Turned into Uppercase: "+res;
+            }
+
+        }
+    </script>
+    <style>
+        body{
+            /* border: 2px solid black; */
+            width: fit-content;
+        }
+        button{
+            margin-left: 35%
+        }
+    </style>
+</head>
+<body>
+    <h1> Java script methods: </h1>
+    <label for=""> Type something: <input type="text" id="given"> </label> <br> <br>
+    <label for=""> Operation you wanna perform: </label>
+    <select name="" id="op">
+        <option value="length"> Length </option>
+        <option value="charAt"> charAt </option>
+        <option value="slice"> Slice </option>
+        <option value="substring"> Substring </option>
+        <option value="substr"> Substr </option>
+        <option value="lower"> Lowercase </option>
+        <option value="upper"> Uppercase </option>
+    </select> <br> <br>
+    <button onclick="methods()"> Destroy me! </button> <br> <br>
+    <div id="answers">
+
+    </div>
+</body>
+</html>
