@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onload page</title>
+    <script>
+        function load(){
+            confirm("Do you want to continue?");
+        }
+        function greeting(){
+            var name = prompt("Enter your name");
+            alert("Welcome "+ name);
+        }
+    </script>
+</head>
+<body onload="load()">
+    <button onclick="greeting()"> Click Me </button>
+</body>
+</html>

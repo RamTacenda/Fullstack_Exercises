@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fact(){
+        var n = parseInt(document.getElementById("num").value)
+        var sum = 1;
+        for(let i=1; i<=n; i++){
+            sum *= i;
+        }
+        document.getElementById("ResultDiv").innerHTML = "Factorial of "+n+" is "+sum;
+        }
+    </script>
+</head>
+<body>
+    <label for=""> Enter a number: <input type="text" id="num"> </label> <br>
+    <button onclick="fact()"> Factorial </button><br> <br>
+    <div id="ResultDiv">
+
+    </div>
+</body>
+</html>
