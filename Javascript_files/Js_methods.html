@@ -43,6 +43,45 @@
                 res = str.toUpperCase();
                 document.getElementById("answers").innerHTML = "Turned into Uppercase: "+res;
             }
+            if(opr == "concat"){
+                var str2 = prompt("Give me the string to concat: ");
+                res = str.concat(" ", str2)
+                document.getElementById("answers").innerHTML = "String concated: "+res;
+            }
+            if(opr == "trim"){
+                res = str.trim();
+                document.getElementById("answers").innerHTML = "Trimmed: "+res;
+            }
+            if(opr == "trimstart"){
+                res = str.trimStart();
+                document.getElementById("answers").innerHTML = "Trimmed at the start "+res;
+            }
+            if(opr == "trimend"){
+                res = str.trimEnd();
+                document.getElementById("answers").innerHTML = "Trimmed at the end "+res;
+            }
+            if(opr == "repeat"){
+                n = parseInt(prompt("How many times you wanna repeat this string: "));
+                res = str.repeat(n);
+                document.getElementById("answers").innerHTML = "Repeated: "+res;
+            }
+            if(opr == "replace"){
+                string = prompt("Replace and Replacewith (ie. repent toddler):");
+                const arr = string.split(" ");
+                res = str.replace(arr[0], arr[1]);
+                document.getElementById("answers").innerHTML = "Replaced: "+res;
+            }
+            if(opr == "replaceall"){
+                string = prompt("Replace and Replacewith (ie. repent toddler): ");
+                const arr = string.split(" ");
+                res = str.replace(arr[0], arr[1]);
+                document.getElementById("answers").innerHTML = "Replaced all: "+res;
+            }
+            if(opr == "split"){
+                var param = prompt("Split parameter: ");
+                const arr = str.split(" ");
+                document.getElementById("answers").innerHTML = "Splitted: "+arr;
+            }
 
         }
     </script>
@@ -68,6 +107,15 @@
         <option value="substr"> Substr </option>
         <option value="lower"> Lowercase </option>
         <option value="upper"> Uppercase </option>
+        <option value="concat"> Concat </option>
+        <option value="trim"> Trim </option>
+        <option value="trimstart"> TrimStart </option>
+        <option value="trimend"> TrimEnd </option>
+        <option value="repeat"> Repeat </option>
+        <option value="replace"> Replace </option>
+        <option value="replaceall"> replaceAll </option>
+        <option value="split"> Split </option>
+
     </select> <br> <br>
     <button onclick="methods()"> Destroy me! </button> <br> <br>
     <div id="answers">

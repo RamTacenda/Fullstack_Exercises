@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Constructor</title>
+    <script>
+        class student{
+            constructor(rollno, degree, branch){
+                this.rollno = rollno;
+                this.branch = branch;
+                this.degree = degree;
+            }
+            display(){
+                document.write("<br>");
+                document.write("<br> Roll No:"+ this.rollno);
+                document.write("<br> Branch:"+ this.branch);
+                document.write("<br> Degree:"+ this.degree);
+                document.write("<br>");
+
+            }
+        }
+        var obj1 = new student(12, "AI&DS", "B.Tech");
+        obj1.display();
+
+        var obj2 = new student(14, "Biotech", "B.Eng");
+        obj2.display();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
