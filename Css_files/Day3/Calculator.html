@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_calc.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
-    <title>Calc</title>
+    <title>Calculator</title>
     <script>
         var string = '';
         function display(n){
@@ -14,7 +14,6 @@
             }
             else if(n == 'back'){
                 string = string.slice(0, -1);
-                // document.write("Calculated: "+string);
             }
             else{
                 string += n;
@@ -25,11 +24,12 @@
             var vals = string;
             try{
                 let x = math.evaluate(vals)
-                string = x;
                 document.getElementById('output').value = x;
+                string = x;
             }
             catch(e){
                 document.getElementById('output').value = "ERROR"
+                string = '';
             }
 
         }
