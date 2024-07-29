@@ -1,0 +1,33 @@
+<!-- <app-childcomponent>
+
+</app-childcomponent> -->
+<h1> Interpolation</h1>
+<b> 
+  Name: {{name}}
+  <br>
+  Age: {{age}}
+  <br>
+  Email: {{email}}
+  <br>
+  Addition: {{add(10, 20)}}
+</b>
+
+<h1> Property Binding</h1>
+<font [color] = "txtcolor">
+<b>
+  My Name: <input type="text" value="{{name}}"> <br>
+  My Age: <input type="text" [value]="age"> <br>
+  My Email: <input type="text" [value]="email">
+</b>
+</font>
+
+<h1> Event Biding Example</h1>
+<b>
+  <button (click)="changeName()"> Change Name</button><br>
+  <button (click)="changeEmail()"> Change Email</button><br>
+  <button (click)="changeAge()"> Change Age</button>
+
+</b>
+<h1> Displaying Image</h1>
+<img [src]="imgpath" alt="" style="width:300px"/>
+<button (click)="clickimg()"> Change Image</button>
