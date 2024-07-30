@@ -15,7 +15,7 @@
 <h1> Property Binding</h1>
 <font [color] = "txtcolor">
 <b>
-  My Name: <input type="text" value="{{name}}"> <br>
+  My Name: <input type="text" [value]="name"> <br>
   My Age: <input type="text" [value]="age"> <br>
   My Email: <input type="text" [value]="email">
 </b>
@@ -31,3 +31,31 @@
 <h1> Displaying Image</h1>
 <img [src]="imgpath" alt="" style="width:300px"/>
 <button (click)="clickimg()"> Change Image</button>
+
+<h1> Two way Binding</h1>
+<label for="">Enter Something:
+<input type="text" name="" id="" [(ngModel)]="fname">
+</label>
+<h1>What you've given</h1>
+<h2>{{fname}}</h2>
+
+<br>
+
+<h1>Structural Directives</h1>
+<button (click)="show_or_hide()"> Show or Hide </button>
+<div *ngIf="flag" [ngStyle]="mystyle">
+  <h3>Hey</h3>
+    <ul>
+      <li *ngFor="let i of vehicles" (click)="selectedvec(i)"> {{i}} </li>
+    </ul>
+</div>
+<h1>Welcome</h1>
+<button (click)="changeClass()"> Change color</button>
+<h1 [ngClass]="myClass">The selected one: {{selvec}}</h1>
+
+<div [ngSwitch]="selvec">
+  <font color="green" *ngSwitchCase="'One Wheeler'"> Monobike</font>
+  <font color="green" *ngSwitchCase="'Two Wheeler'"> Bike </font>
+  <font color="green" *ngSwitchCase="'Three Wheeler'"> Auto</font>
+  <font color="green" *ngSwitchDefault> Invalid </font>
+</div>

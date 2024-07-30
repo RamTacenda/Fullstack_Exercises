@@ -12,6 +12,12 @@ export class AppComponent {
   email:string;
   txtcolor:string;
   imgpath:string;
+  fname:string;
+  flag:boolean;
+  vehicles:string[];
+  selvec:string ="";
+  mystyle: {};
+  myClass:string;
 
   constructor(){
     this.name = "Kenan";
@@ -19,6 +25,11 @@ export class AppComponent {
     this.email = "kenanaljedi@gmail.com";
     this.txtcolor = "red";
     this.imgpath = "https://yt3.googleusercontent.com/y4J_Fs5ksRlxx6_LzT1VKxVqH_T8Vyn_RN_YYgLJhuMzBS5qxTgm7NlEcMkQd3hgCpfWtYcEUg=s900-c-k-c0x00ffffff-no-rj"
+    this.fname = "";
+    this.flag = true;
+    this.vehicles = ["One Wheeler", "Two Wheeler", "Three Wheeler"];
+    this.mystyle = {'width': 'fit-content', 'border': '2px solid green'};
+    this.myClass = "Class1";
   }
 
   add(a:number,b:number){
@@ -43,6 +54,20 @@ export class AppComponent {
       this.imgpath = "https://yt3.googleusercontent.com/y4J_Fs5ksRlxx6_LzT1VKxVqH_T8Vyn_RN_YYgLJhuMzBS5qxTgm7NlEcMkQd3hgCpfWtYcEUg=s900-c-k-c0x00ffffff-no-rj";
     }
   }
+  show_or_hide(){
+    this.flag = !this.flag
+  }
+  selectedvec(vec :string){
+    this.selvec = vec;
+  }
+  changeClass(){
+    if(this.myClass == "Class1"){
+      this.myClass = "Class2";
+    }
+    else if(this.myClass == "Class2"){
+      this.myClass = "Class1";
+    }
+}
 }
 
 
