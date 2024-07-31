@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="#">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <title>Inventory Management System</title>
+  <style>
+    #Header{
+      /* border: 2px solid; */
+      border: none;
+      box-shadow: 1px 1px 5px black; 
+      background-color: rgba(0, 255, 255, 0.651); 
+      height: 120px; 
+      /* text-align: center; */
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #inputfield1{
+      margin-bottom: 12px; 
+      width: 250px; 
+      height: 30px;
+    }
+    #content1{
+      /* border: 2px solid black;  */
+      border: none;
+      width: fit-content; 
+      height: fit-content; 
+      background-color:rgba(0, 255, 255, 0.502); 
+      box-shadow: 1px 1px 5px black; 
+      border-radius: 5px;
+      padding: 25px;
+    }
+    #content2{
+      /* border: 2px solid black;  */
+      border: none;
+      width: fit-content; 
+      height: fit-content; 
+      background-color:rgba(0, 255, 255, 0.502); 
+      box-shadow: 1px 1px 5px black; 
+      border-radius: 5px;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <div class="container" id="Header">
+  <h1>Inventory Management System</h1>
+  </div>
+
+  <br>
+
+  <div class="container" id="contents" style="border: 2px solid; height: fit-content; display: flex; justify-content: space-between;">
+    <div class="container" id="content1">
+      <h5>Date Purchased:</h5>
+      <input type="date" name="" id="inputfield1">
+      <h5>Product Id:</h5>
+      <input type="text" name="" id="inputfield1">
+      <h5>Product Name:</h5>
+      <input type="text" name="" id="inputfield1">
+      <h5>Product Quantity:</h5>
+      <input type="number" name="" id="inputfield1">
+      <h5>Product Price:</h5>
+      <input type="text" name="" id="inputfield1" style="margin-bottom: 18px;">
+      <div class="buttons" style="width: 350px; display: flex; justify-content: space-between;">
+        <button class="btn btn-info" style="width: 100px;"> Save </button>
+        <button class="btn btn-info" style="width: 100px;"> Update </button>
+        <button class="btn btn-info" style="width: 100px;"> Delete </button>
+      </div>
+    </div>
+
+    <div class="container" id="content2" style="padding-bottom: 15px;">
+      <table class="table table-bordered table-hover" style="border-radius: 5px;">
+        <tr>
+          <th> Date Purchased</th>
+          <th> Id</th>
+          <th> Name</th>
+          <th> Quantity</th>
+          <th> Price (in RS)</th>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+        <tr>
+          <td> 25-Jul-2024</td>
+          <td> #24839 </td>
+          <td> Moong Dal pack: Half kilo</td>
+          <td> 4</td>
+          <td> 756</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

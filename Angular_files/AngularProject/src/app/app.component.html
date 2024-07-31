@@ -1,6 +1,3 @@
-<!-- <app-childcomponent>
-
-</app-childcomponent> -->
 <h1> Interpolation</h1>
 <b> 
   Name: {{name}}
@@ -58,4 +55,25 @@
   <font color="green" *ngSwitchCase="'Two Wheeler'"> Bike </font>
   <font color="green" *ngSwitchCase="'Three Wheeler'"> Auto</font>
   <font color="green" *ngSwitchDefault> Invalid </font>
+</div>
+<br>
+<table>
+  <tr>
+    <th> <a routerLink="/home">Home</a></th>
+    <th> <a routerLink="/contact">contact us</a></th>
+    <th> <a routerLink="/about">About us</a></th>
+  </tr>
+</table>
+<br>
+<div>
+  <router-outlet></router-outlet>
+</div>
+<br>
+<div>
+  <h4>Addition: {{sum}}</h4>
+  <h4>Subtraction: {{sub}}</h4>
+</div>
+
+<div>
+  <app-home></app-home>
 </div>

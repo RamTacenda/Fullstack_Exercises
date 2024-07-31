@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CalculatorService } from './calculator.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,12 @@ export class AppComponent {
   mystyle: {};
   myClass:string;
 
-  constructor(){
+  sum:number;
+  sub:number;
+
+  constructor(private calc: CalculatorService){
+    this.sum = calc.getadd(10, 20);
+    this.sub = calc.getsub(10,20);
     this.name = "Kenan";
     this.age = 18;
     this.email = "kenanaljedi@gmail.com";
