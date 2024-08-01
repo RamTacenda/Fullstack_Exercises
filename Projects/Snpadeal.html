@@ -65,23 +65,32 @@
             color: #3F3F3F;
             list-style: none;
         }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #trendingItems:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+            /* transition: 0.2s; */
+        }
     </style>
 
 </head>
 <body>
-    <div class="col-sm-12" style="background-color: #C6003D; height: 30px;" >
-        <div class="container-fluid" id="topnav" style=" width: 80%;"> <!-- Topnav -->
-            <div class="container" style="width: fit-content; margin-left: 0px;"><span style="font-size: 12px; color: white;">Brand Waali Quality, Bazaar Waali Deal!</span></div>
-            <div class="container" style="width: fit-content;margin-right: 0px;">
-                <span style="font-size: 12px; color: white;">impact@snapdeal</span>
-                <span style="font-size: 12px; color: white; padding: 8px;">Help center</span>
-                <span style="font-size: 12px; color: white; padding: 8px;">Sell on snapdeal</span>
-                <span style="font-size: 12px; color: white; padding: 8px;"><i class="bi bi-phone" style="padding: 5px;"></i>Download app</span>
-                <span style="font-size: 12px; color: white; padding: 8px;">Donate for Elderly</span>
+        <div class="col-sm-12" style="background-color: #C6003D; height: 30px;" >
+            <div class="container-fluid" id="topnav" style=" width: 80%;"> <!-- Topnav -->
+                <div class="container" style="width: fit-content; margin-left: 0px;"><span style="font-size: 12px; color: white;">Brand Waali Quality, Bazaar Waali Deal!</span></div>
+                <div class="container" style="width: fit-content;margin-right: 0px;">
+                    <span style="font-size: 12px; color: white;">impact@snapdeal</span>
+                    <span style="font-size: 12px; color: white; padding: 8px;">Help center</span>
+                    <span style="font-size: 12px; color: white; padding: 8px;">Sell on snapdeal</span>
+                    <span style="font-size: 12px; color: white; padding: 8px;"><i class="bi bi-phone" style="padding: 5px;"></i>Download app</span>
+                    <span style="font-size: 12px; color: white; padding: 8px;">Donate for Elderly</span>
+                </div>
             </div>
-
         </div>
-    </div>
     <div class="col-sm-12" style="height: 75px; background-color: #E40046;" id="bottomnavcol">
         <div class="container-fluid" id="bottomnav" style=" width: 80%;"> <!-- Bottomnav -->
                 <div><img src="media/snapdeal_logo.png" alt="" style=" margin-top: 6px;"></div>
@@ -462,7 +471,7 @@
             </ul>
         </div>
         <!--Right Div-->
-        <div class="container" style="border: 2px solid blue; width: 1260px; margin-right: 0px;">
+        <div class="container" style="border: 2px solid blue; width: 1280px; margin-right: 0px;">
             <div id="carouselExampleControls" class="carousel slide" style="border: 2px solid black; height: fit-content; width: 1220px; z-index: -1; display: flex; justify-content: space-between;" data-ride="carousel">
                 <div class="carousel-inner" style="width: 958px;">
                   <div class="carousel-item active">
@@ -496,20 +505,84 @@
 
                 </div>
                 <br>
-                <div class="container" style="border: 2px solid green; width: 1230px; height: 400px; padding-left: 0px; padding-right: 0px;">
+                <div class="container" style="border: 2px solid green; width: 1250px; height: 400px; padding-left: 0px; padding-right: 0px;">
                     <h6 style="border: 2px solid; width: fit-content; font-weight: 200;">TRENDING PRODUCTS</h6>
-                    <div class="container-fluid" style="border: 2px solid rgb(0, 255, 34); height: 80%; display: flex;">
-                        <div>
+                    <div class="container-fluid" style="border: 2px solid rgb(0, 255, 34); height: 75%; display: flex; justify-content: space-between;">
+                        <div id="trendingItems">
                             <img src="media/bhawna-collection-Loard-Shiv-Trishul.avif" alt="" height="200px">
                         <div style="background-color: #ffffff; border: 1px solid;">
-                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid;"> Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala  </p>
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala  </p>
                             <i class="bi bi-star-fill" style="font-size: 14px;"></i>
                             <i class="bi bi-star-fill" style="font-size: 14px;"></i>
                             <i class="bi bi-star-fill" style="font-size: 14px;"></i>
                             <i class="bi bi-star-fill" style="font-size: 14px;"></i>
                             <i class="bi bi-star" style="font-size: 14px;"></i>
-                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid;"> RS 142</p>
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> RS 142 <span class="badge bg-primary"> 64% off</span></p>
+                        </div>
+                        </div>
 
+                        <div id="trendingItems">
+                            <img src="media/bhawna-collection-Loard-Shiv-Trishul.avif" alt="" height="200px">
+                        <div style="background-color: #ffffff; border: 1px solid;">
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala  </p>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star" style="font-size: 14px;"></i>
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> RS 142 <span class="badge bg-primary"> 64% off</span></p>
+                        </div>
+                        </div>
+
+                        <div id="trendingItems">
+                            <img src="media/bhawna-collection-Loard-Shiv-Trishul.avif" alt="" height="200px">
+                        <div style="background-color: #ffffff; border: 1px solid;">
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala  </p>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star" style="font-size: 14px;"></i>
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> RS 142 <span class="badge bg-primary"> 64% off</span></p>
+                        </div>
+                        </div>
+
+                        <div id="trendingItems">
+                            <img src="media/bhawna-collection-Loard-Shiv-Trishul.avif" alt="" height="200px">
+                        <div style="background-color: #ffffff; border: 1px solid;">
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala  </p>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star" style="font-size: 14px;"></i>
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> RS 142 <span class="badge bg-primary"> 64% off</span></p>
+                        </div>
+                        </div>
+
+                        <div id="trendingItems">
+                            <img src="media/bhawna-collection-Loard-Shiv-Trishul.avif" alt="" height="200px">
+                        <div style="background-color: #ffffff; border: 1px solid;">
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala  </p>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star" style="font-size: 14px;"></i>
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> RS 142 <span class="badge bg-primary"> 64% off</span></p>
+                        </div>
+                        </div>
+
+                        <div id="trendingItems">
+                            <img src="media/bhawna-collection-Loard-Shiv-Trishul.avif" alt="" height="200px">
+                        <div style="background-color: #ffffff; border: 1px solid;">
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala  </p>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star-fill" style="font-size: 14px;"></i>
+                            <i class="bi bi-star" style="font-size: 14px;"></i>
+                            <p style="font-size: 12px; width: 170px; text-align: left; padding-right: 0px; border: 2px solid; margin-bottom: 0px;"> RS 142 <span class="badge bg-primary"> 64% off</span></p>
                         </div>
                         </div>
                     </div>
