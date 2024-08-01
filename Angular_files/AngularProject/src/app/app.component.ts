@@ -38,6 +38,10 @@ export class AppComponent {
     this.myClass = "Class1";
   }
 
+  alerted(){
+    alert("Hey this is alert!");
+  }
+
   add(a:number,b:number){
     let val = a+b;
     return val;

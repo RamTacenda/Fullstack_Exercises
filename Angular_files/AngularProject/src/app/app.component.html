@@ -57,13 +57,11 @@
   <font color="green" *ngSwitchDefault> Invalid </font>
 </div>
 <br>
-<table>
-  <tr>
-    <th> <a routerLink="/home">Home</a></th>
-    <th> <a routerLink="/contact">contact us</a></th>
-    <th> <a routerLink="/about">About us</a></th>
-  </tr>
-</table>
+
+<a routerLink="/home">Home</a>
+<a routerLink="/contact">contact us</a>
+<a routerLink="/about">About us</a>
+
 <br>
 <div>
   <router-outlet></router-outlet>
@@ -77,3 +75,5 @@
 <div>
   <app-home></app-home>
 </div>
+
+<button (click)="alerted()"> Alert me</button>
