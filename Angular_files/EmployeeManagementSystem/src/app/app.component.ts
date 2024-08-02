@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Employee } from './model/Employee';
+import { EmployeeService } from './employee.service';
 
 @Component({
   selector: 'app-root',
@@ -9,26 +10,45 @@ import { Employee } from './model/Employee';
 export class AppComponent {
   title = 'EmployeeManagementSystem';
   employee : Employee;
-  name: string;
+  employeeArr : Employee[];
+  flag: boolean;
+  result: string;
 
-  constructor(){
+  constructor(private service: EmployeeService){
     this.employee = new Employee();
-    this.name = "Find all";
+    this.employeeArr = [];
+    this.flag = false;
+    this.result = "";
   }
 
   insertEmployee(data: any){
-    this.employee.empId = data.empId;
+    this.employee.id = data.empId;
     this.employee.empName = data.empName;
     this.employee.empSalary = data.empSalary;
-    alert("Hey This is a alert message");
+
+    this.result = this.service.insertEmployee(this.employee);
   }
 
-  changename(){
-    if(this.name=="Find all"){
-      this.name="Find All";
-    }
-    else if(this.name=="Find All"){
-      this.name="Find all";
-    }
+  updateEmployee(data: any){
+    this.employee.id = data.empId;
+    this.employee.empName = data.empName;
+    this.employee.empSalary = data.empSalary;
+
+    this.result = this.service.updateEmployee(this.employee);
   }
+
+  deleteEmployee(data: any){
+    this.result = this.service.deleteEmployee(data.empId);
+  }
+
+  findEmployee(data: any){
+    this.employee = this.service.findEmployee(data.empId);
+    this.result = this.employee.id+" "+this.employee.empName+this.employee.empSalary;
+  }
+
+  findallEmployee(){
+    this.employeeArr = this.service.findallEmployee();
+    this.flag = true;
+  }
+
 }

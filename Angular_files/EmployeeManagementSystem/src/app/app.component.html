@@ -59,21 +59,32 @@
                                     Insert 
                                 </button>
                             &nbsp;&nbsp;
-                                <button class="btn btn-primary">
+                                <button class="btn btn-primary" (click)="updateEmployee(myForm.value)">
                                     Update 
                                 </button>&nbsp;&nbsp;
-                                <button class="btn btn-danger">
+                                <button class="btn btn-danger" (click)="deleteEmployee(myForm.value)">
                                     Delete 
                                 </button>&nbsp;&nbsp;
-                                <button class="btn btn-warning">
+                                <button class="btn btn-warning" (click)="findEmployee(myForm.value)">
                                     Find 
                                 </button>
                                 &nbsp;&nbsp;
-                                <button class="btn btn-info" (click)="changename()">
-                                    {{name}}
+                                <button class="btn btn-info" (click)="findallEmployee()">
+                                    Findall
                                 </button>
                             </form>
                         </div>
                     </div>
+                </div>
+
+                <br>
+                <h5>{{result}}</h5>
+                <div style="width: 100%;" *ngIf="flag">
+                    <table width="80%" align="center" class="table table-borderd">
+                     <tr><th>Employee Id</th><th>Employee Name</th><th>Employee Salary</th></tr> 
+                      <tr *ngFor="let emp of employeeArr">
+                          <td> {{emp.id}} </td><td> {{emp.empName}} </td><td> {{emp.empSalary}} </td>
+                      </tr>
+                   </table>
                 </div>
 
