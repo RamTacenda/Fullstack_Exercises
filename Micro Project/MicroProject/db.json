@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "id": "234",
+      "pdate": "2024-08-22",
+      "pname": "SoapBar",
+      "pquantity": 12,
+      "pprice": "600"
+    },
+    {
+      "id": "203",
+      "pdate": "2024-08-22",
+      "pname": "GoldilocksLock",
+      "pquantity": 2,
+      "pprice": "1200"
+    },
+    {
+      "id": "824",
+      "pdate": "2024-08-16",
+      "pname": "Utensils",
+      "pquantity": 5,
+      "pprice": "800"
+    },
+    {
+      "id": "456",
+      "pdate": "2024-08-24",
+      "pname": "Booyachicken",
+      "pquantity": 56,
+      "pprice": "30000"
+    },
+    {
+      "id": "412",
+      "pdate": "2024-08-24",
+      "pname": "Booyachicken",
+      "pquantity": 56,
+      "pprice": "30000"
+    },
+    {
+      "id": "417",
+      "pdate": "2024-08-16",
+      "pname": "Goldilockslock",
+      "pquantity": 34,
+      "pprice": "5000"
+    },
+    {
+      "id": "417",
+      "pdate": "2024-08-16",
+      "pname": "Goldilockslock",
+      "pquantity": 34,
+      "pprice": "5000"
+    },
+    {
+      "id": "",
+      "pdate": "",
+      "pname": "",
+      "pquantity": "",
+      "pprice": ""
+    }
+  ]
+}

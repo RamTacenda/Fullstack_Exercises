@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Content1Component } from './content1/content1.component';
-import { Content2Component } from './content2/content2.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { InventoryService } from './inventory.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Content1Component,
-    Content2Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    InventoryService
   ],
   bootstrap: [AppComponent]
 })
