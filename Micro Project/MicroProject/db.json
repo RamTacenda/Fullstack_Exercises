@@ -50,11 +50,18 @@
       "pprice": "5000"
     },
     {
-      "id": "",
-      "pdate": "",
-      "pname": "",
-      "pquantity": "",
-      "pprice": ""
+      "id": "567",
+      "pdate": "2024-08-16",
+      "pname": "Cookie",
+      "pquantity": 4,
+      "pprice": "400"
+    },
+    {
+      "id": "567",
+      "pdate": "2024-08-16",
+      "pname": "Cookie",
+      "pquantity": 4,
+      "pprice": "400"
     }
   ]
 }
