@@ -43,7 +43,7 @@ export class AppComponent {
 
   findEmployee(data: any){
     this.employee = this.service.findEmployee(data.empId);
-    this.result = this.employee.id+" "+this.employee.empName+this.employee.empSalary;
+    this.result = this.employee.id+" "+this.employee.empName+ " " +this.employee.empSalary;
   }
 
   findallEmployee(){

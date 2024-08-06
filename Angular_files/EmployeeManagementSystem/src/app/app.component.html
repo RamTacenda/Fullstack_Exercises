@@ -79,8 +79,8 @@
 
                 <br>
                 <h5>{{result}}</h5>
-                <div style="width: 100%;" *ngIf="flag">
-                    <table width="80%" align="center" class="table table-borderd">
+                <div style="width: 60%;" *ngIf="flag">
+                    <table width="100%" class="table table-borderd">
                      <tr><th>Employee Id</th><th>Employee Name</th><th>Employee Salary</th></tr> 
                       <tr *ngFor="let emp of employeeArr">
                           <td> {{emp.id}} </td><td> {{emp.empName}} </td><td> {{emp.empSalary}} </td>
