@@ -5,6 +5,7 @@ public class Ascii {
 
         System.out.print("Enter the number: ");
         String str = sc.nextLine();
+        sc.close();
         int res = (int) str.charAt(0);
         System.out.println("The Ascii value of "+res);
     }
