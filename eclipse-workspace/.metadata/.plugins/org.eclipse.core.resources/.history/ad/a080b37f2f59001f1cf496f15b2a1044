@@ -1,0 +1,22 @@
+package com.Inheritances;
+
+class TwoWheeler{
+	void noOfWheels() {
+		System.out.println("I got two wheels");
+	}
+}
+
+class Bike extends TwoWheeler{
+	void brandName() {
+		System.out.println("Brand name is Honda");
+	}
+}
+
+public class Inherit {
+	public static void main(String args[]) {
+		Bike obj = new Bike();
+		obj.brandName();
+		obj.noOfWheels();
+	}
+
+}

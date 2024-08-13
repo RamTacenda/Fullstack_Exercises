@@ -1,0 +1,24 @@
+package com.Assignment3;
+
+class Shape{
+	int height;
+	int width;
+	int getArea(int height, int width) {
+		 this.height = height;
+		 this.width = width;
+		 return 0;
+	}
+	void display() {
+		System.out.println("The Area: "+(height*width));
+	}
+}
+public class Q3 {
+	public static void main(String args[]) {
+		Shape obj = new Shape();
+		obj.getArea(10, 20);
+		
+		obj.display();
+	}
+
+	
+}
