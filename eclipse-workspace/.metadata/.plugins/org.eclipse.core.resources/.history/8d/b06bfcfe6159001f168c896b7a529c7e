@@ -1,0 +1,21 @@
+package com.Assignment3;
+
+class Vehicle extends Car{
+	
+	void drive() {
+		 System.out.println("This is a vehicle class");
+	}
+}
+
+class Car{
+	void drive() {
+		System.out.println("This is a car class");
+	}
+}
+public class Q2 {
+	public static void main(String args[]) {
+		Vehicle obj = new Vehicle();
+		obj.drive();
+	}
+
+}

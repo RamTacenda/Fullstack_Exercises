@@ -1,0 +1,23 @@
+package com.fullstack;
+
+public class ConstructorOverloading {
+
+	ConstructorOverloading(String Name){
+		System.out.println("The Name is "+ Name);
+	}
+	ConstructorOverloading(int a, int b){
+		System.out.println("Added: "+(a+b));
+	}
+	ConstructorOverloading(int f){
+		int res = 1;
+		for(int i=1; i<=f; i++) {
+			res = res * i;
+		}
+		System.out.println("Factorial: "+res);
+	}
+	public static void main(String args[]) {
+		ConstructorOverloading obj1 = new ConstructorOverloading(10);
+		ConstructorOverloading obj2= new ConstructorOverloading("Bond");
+		ConstructorOverloading obj3 = new ConstructorOverloading(10, 20);
+	}
+}
