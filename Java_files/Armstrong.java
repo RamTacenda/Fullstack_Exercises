@@ -7,6 +7,7 @@ public class Armstrong {
 
         System.out.print("Enter the Number ");
         int num = scan.nextInt();
+        scan.close();
         int num2 = num;
         int res = 0;
         int count = Integer.toString(num).length();

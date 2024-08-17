@@ -10,6 +10,8 @@ public class Random {
         System.out.print("Maximum Number: ");
         int max = scan.nextInt();
 
+        scan.close();
+
         System.out.println("The Random number: "+ (int) (Math.random()*(max-min+1)+min));
     }
     
