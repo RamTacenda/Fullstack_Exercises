@@ -1,0 +1,19 @@
+package com.Practices;
+
+class A {
+	String some = "Hey!";
+	A(){
+		System.out.println("Hey! "+ some);
+	}
+	
+	void setter(String txt) {
+		this.some = txt;
+	}
+	
+}
+
+public class Practice1 {
+	public static void main(String args[]) {
+		A obj = new A();
+	}
+}
